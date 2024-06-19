@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage</title>
+        <link rel="stylesheet" href="/Mosberg-Catalogue.Github.io/src/css/Mosberg-edit.css">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <button id="settings-btn">Settings</button>
+            </nav>
+        </header>
+        <main id="main">
+            <!-- Page content will be loaded here -->
+        </main>
+        <div id="settings-modal" class="modal">
+            <div class="modal-content">
+                <h2>Settings</h2>
+                <label>
+                    <input type="checkbox" id="dark-mode-toggle"> Dark Mode
+                </label>
+                <label>
+                    Font Size:
+                    <input type="range" id="font-size-slider" min="12" max="24" value="16">
+                </label>
+                <label>
+                    Font Family:
+                    <select id="font-family-dropdown">
+                        <option value="Arial">Arial</option>
+                        <option value="Helvetica">Helvetica</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                    </select>
+                </label>
+                <label>
+                    Language:
+                    <select id="language-dropdown">
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                    </select>
+                </label>
+                <button id="save-btn">Save</button>
+                <button id="cancel-btn">Cancel</button>
+                <button id="reset-btn">Reset</button>
+                <button id="close-modal-btn">Close</button>
+            </div>
+        </div>
+        <div id="cart-modal" class="modal">
+            <div class="modal-content">
+                <h2>Cart</h2>
+                <ul id="cart-items-list"></ul>
+                <p id="cart-total-price">Total: $0.00</p>
+                <button id="cart-checkout-btn">Checkout</button>
+                <button id="cart-close-btn">Close</button>
+            </div>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+        <div id="catalogue-items">
+            <!-- Catalogue items will be loaded here -->
+        </div>
+        <button id="to-top-btn">To Top</button>
+        <script src="/Mosberg-Catalogue.Github.io/src/js/script-edit.js"></script>
+    </body>
+
+</html>
