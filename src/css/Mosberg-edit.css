@@ -1,0 +1,254 @@
+:root {
+    --background-color-header: #f8f9fa;
+    --text-color-header-h1: #343a40;
+    --text-color-header-p: #868e96;
+    --background-color-nav: #343a40;
+    --text-color-nav-a: #f8f9fa;
+    --text-color-nav-a-hover: #495057;
+    --background-color-nav-a: #343a40;
+    --background-color-article: #f8f9fa;
+    --background-color-main: #f8f9fa;
+    --border-color-canvas: #ced4da;
+    --background-color-card: #f8f9fa;
+    --box-shadow-color-card: #ced4da;
+    --text-color-card-h2: #343a40;
+    --text-color-card-p: #868e96;
+    --text-color-card-a: #f8f9fa;
+    --background-color-card-a: #343a40;
+    --background-color-card-a-hover: #495057;
+    --border-color-card-a: #343a40;
+    --text-color-to-top: #343a40;
+    --background-color-footer: #343a40;
+    --text-color-footer: #f8f9fa;
+    --card-microsoft-color: #303030;
+    --card-microsoft-background: linear-gradient(90deg, #f34f1c80 0%, #7fbc0080 33%, #ffba0180 66%, #01a6f080 99%);
+    --card-microsoft-border: #747474;
+    --card-open-vsx-color: #f8f9fa;
+    --card-open-vsx-background: linear-gradient(90deg, #c160ef80 0%, #a60ee580 100%);
+    --card-open-vsx-border: #343a40;
+}
+
+header {
+    background-color: var(--background-color-header);
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    background-color: var(--background-color-header);
+    justify-content: center;
+    align-items: left;
+}
+
+.logo img {
+    margin: 1rem;
+    border-radius: 50%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header h1 {
+    background-color: var(--background-color-header);
+    color: var(--text-color-header-h1);
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.header p {
+    color: var(--text-color-header-p);
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+nav {
+    background-color: var(--background-color-nav);
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar a {
+    color: var(--text-color-nav-a);
+    background-color: var(--background-color-nav-a);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    color: var(--text-color-nav-a-hover);
+}
+
+article {
+    background-color: var(--background-color-article);
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.search {
+    justify-content: center;
+    align-items: left;
+}
+
+.theme-switcher {
+    justify-content: center;
+    align-items: right;
+}
+
+main {
+    border: 2px solid var(--border-color-canvas);
+    border-radius: 10px;
+    margin: 10px;
+    background-color: var(--background-color-main);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+}
+
+.extension-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: var(--background-color-card);
+    box-shadow: 0 0 10px var(--box-shadow-color-card);
+}
+
+.extension-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 1rem;
+}
+
+.extension-card h2 {
+    color: var(--text-color-card-h2);
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.extension-card p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-color-card-p);
+}
+
+.extension-card a {
+    color: var(--text-color-card-a);
+    background-color: var(--background-color-card-a);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    border: 2px solid var(--border-color-card-a);
+    margin: 4px;
+}
+
+.extension-card a:hover {
+    background-color: var(--background-color-card-a-hover);
+}
+
+.extension-card .install-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 4px;
+    padding: 4px;
+}
+
+.extension-card .install-links img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 0.5rem;
+
+}
+
+.extension-card .install-links .open-vsx {
+    color: var(--card-open-vsx-color);
+    background: var(--card-open-vsx-background);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    border: 2px solid var(--card-open-vsx-border);
+}
+
+.extension-card .install-links .open-vsx:hover {
+    background-color: var(--background-color-card-a-hover);
+}
+
+.extension-card .install-links .microsoft {
+    color: var(--card-microsoft-color);
+    background: var(--card-microsoft-background);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    border: 2px solid var(--card-microsoft-border);
+}
+
+.extension-card .install-links .microsoft:hover {
+    background-color: var(--background-color-card-a-hover);
+}
+
+.to-top a {
+    color: var(--text-color-to-top);
+    background-color: transparent;
+    font-size: 32px;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.to-top a:hover {
+    opacity: 0.6;
+}
+
+.settings-btn a {
+    color: var(--text-color-to-top);
+    background-color: transparent;
+    font-size: 32px;
+    text-decoration: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.settings a:hover {
+    opacity: 0.6;
+}
+
+.footer {
+    background-color: var(--background-color-footer);
+    color: var(--text-color-footer);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 20px;
+}

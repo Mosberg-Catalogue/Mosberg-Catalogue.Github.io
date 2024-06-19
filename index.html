@@ -1,27 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="description" content="📖Mosberg-Catalogue.Github.io📖 - A Github.io Homepage">
-      <meta name="keywords" content="HTML, CSS, JavaScript">
-      <meta name="author" content="Mosberg">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Mosberg Catalogue</title>
-      <link rel="icon" type="image/x-icon" href="/src/ico/favicon.ico">
-      <link rel="stylesheet" href="/src/css/styles.css">
-   </head>
-   <body>
-      <header>
-         Header Content
-      </header>
-      <main>
-         Main Content
-         <p id="demo">Change the style of an HTML element.</p>
-         <button type="button" onclick="myFunction()">Click Me!</button>
-      </main>
-      <footer>
-         Footer Content
-      </footer>
-      <script src="/src/js/script.js"></script>
-   </body>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="📖Mosberg-Catalogue.Github.io📖 - A Github.io Homepage" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Mosberg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📖Mosberg Catalogue📖</title>
+    <link rel="icon" type="image/x-icon" href="src/ico/favicon.ico" />
+    <link id="theme" rel="stylesheet" type="text/css" href="src/css/Mosberg-edit.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="src/img/mosberg-catalogue-logo-128.png" alt="Mosberg Catalogue" />
+      </div>
+
+      <div class="header">
+        <h1>Mosberg Catalogue</h1>
+        <p>Discover, Share, and Contribute to the community and elevate your knowledge.</p>
+      </div>
+    </header>
+
+    <nav>
+      <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Extensions</a>
+        <a href="#">Projects</a>
+        <a href="#">Documentation</a>
+        <a href="#">Leaderboards</a>
+        <a href="#">About</a>
+      </div>
+    </nav>
+
+    <article>
+      <div class="theme-switcher">
+        Select a theme:
+        <select id="theme-select">
+          <option value="src/css/Mosberg-edit.css">Mosberg-edit</option>
+          <option value="src/css/Mosberg.css">Mosberg</option>
+          <option value="src/css/Oldstyle.css">Oldstyle</option>
+          <option value="src/css/Modernist.css">Modernist</option>
+          <option value="src/css/Midnight.css">Midnight</option>
+          <option value="src/css/Ultramarine.css">Ultramarine</option>
+          <option value="src/css/Swiss.css">Swiss</option>
+          <option value="src/css/Chocolate.css">Chocolate</option>
+          <option value="src/css/Traditional.css">Traditional</option>
+          <option value="src/css/Steely.css">Steely</option>
+        </select>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Search Extensions" />
+        <button>🔍</button>
+      </div>
+    </article>
+
+    <main>
+      <div class="extension-card">
+        <img src="https://via.placeholder.com/200x100" alt="Extension 1" />
+        <h2>Extension 1</h2>
+        <p>Description of Extension 1.</p>
+        <ul>
+          <li>⭐ 500</li>
+          <li>🔧 Debugging</li>
+          <li>💻 JavaScript</li>
+        </ul>
+        <div class="install-links">
+          <a class="open-vsx" href="#">
+            <img title="Download for VSCodium from Open-VSX" src="src/img/open-vsx-400.png"></a>
+          <a class="microsoft" href="#">
+            <img title="Download for VSCode from Microsoft" src="src/img/microsoft-400.png">
+          </a>
+        </div>
+      </div>
+
+      <div class="extension-card">
+        <img src="https://via.placeholder.com/200x100" alt="Extension 2" />
+        <h2>Extension 2</h2>
+        <p>Description of Extension 2.</p>
+        <ul>
+          <li>⭐ 1000</li>
+          <li>📝 Formatting</li>
+          <li>💻 TypeScript</li>
+        </ul>
+        <div class="install-links">
+          <a class="open-vsx" href="#">
+            <img title="Download for VSCodium from Open-VSX" src="src/img/open-vsx-400.png"></a>
+          <a class="microsoft" href="#">
+            <img title="Download for VSCode from Microsoft" src="src/img/microsoft-400.png">
+          </a>
+        </div>
+      </div>
+
+      <div class="extension-card">
+        <img src="https://via.placeholder.com/200x100" alt="Extension 3" />
+        <h2>Extension 3</h2>
+        <p>Description of Extension 3.</p>
+        <ul>
+          <li>⭐ 2000</li>
+          <li>🐛 Linting</li>
+          <li>💻 Python</li>
+        </ul>
+        <div class="install-links">
+          <a class="open-vsx" href="#">
+            <img title="Download for VSCodium from Open-VSX" src="src/img/open-vsx-400.png"></a>
+          <a class="microsoft" href="#">
+            <img title="Download for VSCode from Microsoft" src="src/img/microsoft-400.png">
+          </a>
+        </div>
+      </div>
+
+      <div class="extension-card">
+        <img src="https://via.placeholder.com/200x100" alt="Extension 4" />
+        <h2>Extension 4</h2>
+        <p>Description of Extension 4.</p>
+        <ul>
+          <li>⭐ 2000</li>
+          <li>🐛 Linting</li>
+          <li>💻 Python</li>
+        </ul>
+        <div class="install-links">
+          <a class="open-vsx" href="#">
+            <img title="Download for VSCodium from Open-VSX" src="src/img/open-vsx-400.png"></a>
+          <a class="microsoft" href="#">
+            <img title="Download for VSCode from Microsoft" src="src/img/microsoft-400.png">
+          </a>
+        </div>
+      </div>
+
+      <div class="extension-card">
+        <img src="https://via.placeholder.com/200x100" alt="Extension 5" />
+        <h2>Extension 5</h2>
+        <p>Description of Extension 5.</p>
+        <ul>
+          <li>⭐ 2000</li>
+          <li>🐛 Linting</li>
+          <li>💻 Python</li>
+        </ul>
+        <div class="install-links">
+          <a class="open-vsx" href="#">
+            <img title="Download for VSCodium from Open-VSX" src="src/img/open-vsx-400.png"></a>
+          <a class="microsoft" href="#">
+            <img title="Download for VSCode from Microsoft" src="src/img/microsoft-400.png">
+          </a>
+        </div>
+      </div>
+
+      <div class="extension-card">
+        <img src="https://via.placeholder.com/200x100" alt="Extension 6" />
+        <h2>Extension 6</h2>
+        <p>Description of Extension 6.</p>
+        <ul>
+          <li>⭐ 2000</li>
+          <li>🐛 Linting</li>
+          <li>💻 Python</li>
+        </ul>
+        <div class="install-links">
+          <a class="open-vsx" href="#">
+            <img title="Download for VSCodium from Open-VSX" src="src/img/open-vsx-400.png"></a>
+          <a class="microsoft" href="#">
+            <img title="Download for VSCode from Microsoft" src="src/img/microsoft-400.png">
+          </a>
+        </div>
+      </div>
+
+      <div class="extension-card">
+        <img src="https://via.placeholder.com/200x100" alt="Extension 7" />
+        <h2>Extension 7</h2>
+        <p>Description of Extension 7.</p>
+        <ul>
+          <li>⭐ 2000</li>
+          <li>🐛 Linting</li>
+          <li>💻 Python</li>
+        </ul>
+        <div class="install-links">
+          <a class="open-vsx" href="#">
+            <img title="Download for VSCodium from Open-VSX" src="src/img/open-vsx-400.png"></a>
+          <a class="microsoft" href="#">
+            <img title="Download for VSCode from Microsoft" src="src/img/microsoft-400.png">
+          </a>
+        </div>
+      </div>
+
+      <div class="extension-card">
+        <img src="https://via.placeholder.com/200x100" alt="Extension 8" />
+        <h2>Extension 8</h2>
+        <p>Description of Extension 8.</p>
+        <ul>
+          <li>⭐ 2000</li>
+          <li>🐛 Linting</li>
+          <li>💻 Python</li>
+        </ul>
+        <div class="install-links">
+          <a class="open-vsx" href="#">
+            <img title="Download for VSCodium from Open-VSX" src="src/img/open-vsx-400.png"></a>
+          <a class="microsoft" href="#">
+            <img title="Download for VSCode from Microsoft" src="src/img/microsoft-400.png">
+          </a>
+        </div>
+      </div>
+
+      <div class="extension-card">
+        <img src="https://via.placeholder.com/200x100" alt="Extension 9" />
+        <h2>Extension 9</h2>
+        <p>Description of Extension 9.</p>
+        <ul>
+          <li>⭐ 2000</li>
+          <li>🐛 Linting</li>
+          <li>💻 Python</li>
+        </ul>
+        <div class="install-links">
+          <a class="open-vsx" href="#">
+            <img title="Download for VSCodium from Open-VSX" src="src/img/open-vsx-400.png"></a>
+          <a class="microsoft" href="#">
+            <img title="Download for VSCode from Microsoft" src="src/img/microsoft-400.png">
+          </a>
+        </div>
+      </div>
+
+      <div class="extension-card">
+        <img src="https://via.placeholder.com/200x100" alt="Extension 10" />
+        <h2>Extension 10</h2>
+        <p>Description of Extension 10.</p>
+        <ul>
+          <li>⭐ 2000</li>
+          <li>🐛 Linting</li>
+          <li>💻 Python</li>
+        </ul>
+        <div class="install-links">
+          <a class="open-vsx" href="#">
+            <img title="Download for VSCodium from Open-VSX" src="src/img/open-vsx-400.png"></a>
+          <a class="microsoft" href="#">
+            <img title="Download for VSCode from Microsoft" src="src/img/microsoft-400.png">
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <aside>
+      <div class="settings-btn">
+        <a href="#">⚙️</a>
+      </div>
+
+      <div class="to-top">
+        <a href="#">🔝</a>
+      </div>
+    </aside>
+
+    <footer>
+      <div class="footer">
+        <p>© 2024 Mosberg Catalogue</p>
+      </div>
+    </footer>
+
+    <script src="src/js/script.js"></script>
+  </body>
+
 </html>
