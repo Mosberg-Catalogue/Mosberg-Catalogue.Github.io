@@ -1,9 +1,21 @@
 // Custom stylesheet for my GitHub Pages repository
 
 body {
+  font-family: Arial, sans-serif;
   background-color: #f2f2f2;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   color: #00698f;
+  font-weight: bold;
+  margin-block-end: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #00698f;
+
+  &:hover {
+    color: #004461;
+  }
 }
