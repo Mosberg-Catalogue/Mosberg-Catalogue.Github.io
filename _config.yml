@@ -1,0 +1,13 @@
+title: My GitHub.io Homepage
+description: A brief description of my homepage.
+baseurl: ""
+url: "https://mosberg-catalogue.github.io"
+twitter_username: twitter_username
+github_username:  mosberg-catalogue
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

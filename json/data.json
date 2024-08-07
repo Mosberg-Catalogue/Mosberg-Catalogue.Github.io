@@ -1,0 +1,13 @@
+{
+  "name": "John Doe",
+  " occupation": "Software Developer",
+  "interests": [
+    "Programming",
+    "Hiking",
+    "Reading"
+  ],
+  "socialMedia": {
+    "twitter": "https://twitter.com/twitter_username",
+    "github": "https://github.com/mosberg-catalogue"
+  }
+}
